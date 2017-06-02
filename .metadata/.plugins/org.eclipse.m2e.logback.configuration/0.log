@@ -872,3 +872,15 @@
 2017-06-02 16:30:16,139 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/main/resources
 2017-06-02 16:30:16,142 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-06-02 16:30:16,142 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/test/resources
+2017-06-02 16:38:09,581 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:09,588 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/main/resources
+2017-06-02 16:38:09,591 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:09,591 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/test/resources
+2017-06-02 16:38:26,202 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:26,215 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/main/resources
+2017-06-02 16:38:26,227 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:26,229 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/test/resources
+2017-06-02 16:38:45,651 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:45,653 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/main/resources
+2017-06-02 16:38:45,656 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-02 16:38:45,656 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/prasadtajane/Documents/workspace/StartSpring/SpringOne/src/test/resources

@@ -10,8 +10,4 @@ import org.springframework.context.annotation.Configuration;
 
 public class Application {
 	
-	@Bean
-	public WindState getWind10(){
-		return new WindState(50, 500);
-	}
 }

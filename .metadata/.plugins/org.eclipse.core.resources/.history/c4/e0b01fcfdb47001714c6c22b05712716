@@ -3,7 +3,7 @@ package com.prasad.learnspring.SpringOne;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 @Scope("prototype")
 //By default its of type Singleton
 

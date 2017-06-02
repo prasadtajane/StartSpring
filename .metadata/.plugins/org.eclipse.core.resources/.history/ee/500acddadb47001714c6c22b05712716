@@ -12,6 +12,6 @@ public class Application {
 	
 	@Bean
 	public WindState getWind10(){
-		return new WindState(50, 500);
+		return new WindState(10, 100);
 	}
 }
