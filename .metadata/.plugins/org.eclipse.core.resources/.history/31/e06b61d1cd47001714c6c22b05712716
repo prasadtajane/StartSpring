@@ -1,0 +1,12 @@
+package com.prasad.learnspring.SpringOne;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WindState ws = new WindState(10, 10);
+		
+	}
+
+}

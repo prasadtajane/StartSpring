@@ -1,0 +1,8 @@
+package com.prasad.learnspring.SpringOne;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Application {
+
+}
