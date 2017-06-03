@@ -1,0 +1,5 @@
+package com.prasad.learnspring.service;
+
+public class NotificationService {
+
+}
