@@ -1,15 +1,19 @@
 package com.prasad.learnspring.service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class NotificationService {
 	
+	@Autowired
+	//this is prototype based injection
 	private Email mail;
 
+/*	//this is used in the constructor based injection
 	public NotificationService(Email mail) {
 		super();
 		this.setMail(mail);
-	}
+	}*/
 
 	public Email getMail() {
 		return mail;

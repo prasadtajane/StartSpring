@@ -1,7 +1,8 @@
 package com.prasad.learnspring.service;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("aws")
+//This automatically makes use of the constructor based domain injection
 public class AWSMail implements Email {
 
 	@Override
