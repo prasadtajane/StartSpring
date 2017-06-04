@@ -1,0 +1,7 @@
+package com.prasad.learnspring.constant;
+
+public final class URI {
+	
+	private final static String WTHR = "/weather";
+	private final static String ID = "{id}";
+}

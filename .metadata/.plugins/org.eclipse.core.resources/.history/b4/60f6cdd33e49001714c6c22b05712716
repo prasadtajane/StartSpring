@@ -1,0 +1,36 @@
+package com.prasad.learnspring.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.prasad.learnspring.entity.Weather;
+
+@Controller
+public class WeatherController {
+	
+	@ResponseBody
+	public List<Weather> findAll()	{
+		return null;
+	}
+	
+	@ResponseBody
+	public Weather findOne(String id)	{
+		return null;
+	}
+	
+	@ResponseBody
+	public Weather create (Weather wth)	{
+		return null;
+	}
+
+	@ResponseBody
+	public Weather update (Weather wth)	{
+		return null;
+	}
+	
+	@ResponseBody
+	public void delete (String id)	{
+		
+	}
+}

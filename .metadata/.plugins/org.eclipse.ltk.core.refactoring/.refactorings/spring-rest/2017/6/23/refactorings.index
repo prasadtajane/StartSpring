@@ -1,0 +1,8 @@
+1496591440002	Encapsulate field 'id'
+1496595227521	Rename package 'com.prasad.learnspring.constant'
+1496595239548	Rename package 'com.prasad.learnspring.controller'
+1496595259893	Rename package 'com.prasad.learnspring.entity'
+1496596079050	Rename package 'com.prasad.learnspring.api.serviceimpl'
+1496596428311	Rename type 'WeatherRespository'
+1496597269383	Change method 'exists'
+1496606215264	Delete element

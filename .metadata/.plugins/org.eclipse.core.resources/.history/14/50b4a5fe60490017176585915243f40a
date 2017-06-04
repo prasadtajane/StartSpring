@@ -1,0 +1,5 @@
+package com.prasad.spring.api.service;
+
+public class Weather {
+
+}

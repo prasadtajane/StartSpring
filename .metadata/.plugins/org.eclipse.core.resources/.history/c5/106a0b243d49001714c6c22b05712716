@@ -1,0 +1,5 @@
+package com.prasad.learnspring.controller;
+
+public class WeatherController {
+
+}

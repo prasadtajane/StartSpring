@@ -9,6 +9,7 @@ public class NotificationService {
 	@Autowired
 	//this is prototype based injection
 	@Qualifier("aws")
+	//Prototype based injection works with the Qualifier Annotation
 	private Email mail;
 
 /*	//this is used in the constructor based injection

@@ -1,0 +1,11 @@
+package com.prasad.learnspring.controller;
+
+import java.util.List;
+import com.prasad.learnspring.entity.Weather;
+
+public class WeatherController {
+	
+	public List<Weather> findAll()	{
+		return null;
+	}
+}

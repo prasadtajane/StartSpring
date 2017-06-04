@@ -1,0 +1,40 @@
+package com.prasad.learnspring.api.repository.impl;
+
+import java.util.List;
+
+import com.prasad.learnspring.api.entity.Weather;
+import com.prasad.learnspring.api.repository.WeatherRepository;
+
+public class WeatherRepositoryImpl implements WeatherRepository {
+
+	@Override
+	public List<Weather> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Weather findOne(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Weather create(Weather wth) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Weather update(String id, Weather wth) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.prasad.learnspring.entity;
+
+public class Weather {
+
+}

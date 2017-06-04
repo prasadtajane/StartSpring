@@ -1,0 +1,5 @@
+package com.prasad.learnspring.api.serviceimpl;
+
+public class WeatherServiceImpl {
+
+}
