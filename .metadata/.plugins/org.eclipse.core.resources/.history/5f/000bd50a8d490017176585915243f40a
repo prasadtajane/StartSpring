@@ -1,0 +1,39 @@
+package com.prasad.spring.persistence;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.prasad.spring.persistence.entity.Weather;
+
+public class Tester {
+	
+	public static void main(String args[])	{
+		
+		EntityManagerFactory eMFactory = Persistence.createEntityManagerFactory("jpa-example");
+		//Should be created only Once per database per connection
+		//This is enough for DDL
+		
+		EntityManager eManagerInsert = eMFactory.createEntityManager();
+		EntityManager eManagerSelect = eMFactory.createEntityManager();
+		//You can create as many entity manager as you want
+		//This is required for the DML
+		
+		Weather wthr = new Weather();
+		wthr.setCity("Chicago");
+		wthr.setDescription("Its Dry today");
+		wthr.setHumidity(10);
+		wthr.setPressure(10);
+		wthr.setTemperature(100);
+		
+		eManagerInsert.getTransaction().begin();
+		eManagerInsert.persist(wthr); 			//This forces java to add the object in the database
+		eManagerInsert.getTransaction().begin();	//By default the autoCommit property is set to 'false'
+		//Without transaction begin and commit the persist is of no use.
+		
+		eManagerSelect.close();
+		eManagerInsert.close();
+		
+		eMFactory.close();
+	}
+}

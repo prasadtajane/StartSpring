@@ -1,0 +1,5 @@
+package com.prasad.spring.persistence.entity;
+
+public class Weather {
+
+}
