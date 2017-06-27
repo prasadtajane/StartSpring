@@ -57,15 +57,20 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.prasad.spring.persistence"/>
+			<item value="com.prasad.spring.rest_database"/>
 			<item value="io.egen.small_app"/>
 			<item value="com.prasad.learnspring.api"/>
 			<item value="com.prasad.learnspring.SpringOne"/>
 		</list>
 		<list key="groupId">
+			<item value="com.prasad.spring"/>
 			<item value="io.egen"/>
 			<item value="com.prasad.learnspring"/>
 		</list>
 		<list key="artifactId">
+			<item value="persistence"/>
+			<item value="rest-database"/>
 			<item value="small-app"/>
 			<item value="spring-rest"/>
 			<item value="SpringOne"/>

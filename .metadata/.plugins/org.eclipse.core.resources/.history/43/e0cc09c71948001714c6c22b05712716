@@ -1,5 +1,0 @@
-package com.prasad.learnspring.service;
-
-public interface Email {
-
-}

@@ -1,5 +1,0 @@
-package com.prasad.learnspring.api.service;
-
-public interface WeatherService {
-
-}

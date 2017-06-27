@@ -1,0 +1,5 @@
+package com.prasad.learnspring.api.entity;
+
+public class Wind {
+
+}

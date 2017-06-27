@@ -3,6 +3,7 @@ package com.prasad.spring.persistence;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 import com.prasad.spring.persistence.entity.Weather;
 
@@ -27,9 +28,16 @@ public class Tester {
 		wthr.setHumidity(10); 					wthr2.setHumidity(50);
 		wthr.setPressure(10); 					wthr2.setPressure(20);
 		wthr.setTemperature(100); 				wthr2.setTemperature(80);
+		Weather wthr3 = new Weather();
+		wthr3.setCity("Surat");
+		wthr3.setDescription("Ita a hot day");
+		wthr3.setHumidity(100);
+		wthr3.setPressure(20);
+		wthr3.setTemperature(100);
 		//Every entry in database corresponds to an object instance
 		eManagerInsert.getTransaction().begin();
-		eManagerInsert.persist(wthr); 			eManagerInsert.persist(wthr2);	
+		eManagerInsert.persist(wthr); 			eManagerInsert.persist(wthr2);
+		eManagerInsert.persist(wthr3);
 		//***This forces java to add the object in the database***
 		eManagerInsert.getTransaction().commit();	
 		//***By default the autoCommit property is set to 'false'***
@@ -40,13 +48,22 @@ public class Tester {
 		System.out.println(getwthr);
 		//The find returns 'null' if record pertaining to given id does not exist
 
-		Weather updtwthr = eManagerUpdate.find(Weather.class, "abc1243");
-		updtwthr.setCity("NewYork");
+		//Weather updtwthr = eManagerUpdate.find(Weather.class, "abc1243");
+		Weather updtwthr = null;
+		TypedQuery<Weather> cquery = eManagerUpdate.createQuery("SELECT w FROM Weather w WHERE w.city = :wCity", Weather.class);
+		cquery.setParameter("wCity", "Chicago");
+		updtwthr = cquery.getResultList().get(0);
+		System.out.println(updtwthr);
+		
+		updtwthr.setCity("New York");
 		eManagerUpdate.getTransaction().begin();
 		eManagerUpdate.merge(updtwthr);			//***Need to 'merge' the object to run update in database***
 		eManagerUpdate.getTransaction().commit();
 		
-		Weather dltwthr = eManagerDelete.find(Weather.class, "abc1243");
+		
+		TypedQuery<Weather> dq = eManagerDelete.createQuery("SELECT w from Weather w WHERE w.city = 'Surat'", Weather.class);
+		//dq.setParameter("dCity", "Surat");
+		Weather dltwthr = dq.getResultList().get(0);
 		eManagerDelete.getTransaction().begin();
 		eManagerDelete.remove(dltwthr);
 		eManagerDelete.getTransaction().commit();

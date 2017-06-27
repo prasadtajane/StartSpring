@@ -1,0 +1,14 @@
+package com.prasad.spring.persistence;
+
+import java.util.Optional;
+
+import com.prasad.spring.persistence.entity.Weather;
+
+public class SimpleOptional {
+	
+	Weather wthr = new Weather();
+	wthr.setCity("Delhi");
+	
+	Optional<Weather> op = Optional.of(wthr);
+	
+}

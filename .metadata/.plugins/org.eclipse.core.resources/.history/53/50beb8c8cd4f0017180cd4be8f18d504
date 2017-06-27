@@ -1,0 +1,7 @@
+db.url=
+db.user=
+db.password=
+
+hiber.hbm2ddl=
+hiber.show_sql=
+hiber.format_sql=

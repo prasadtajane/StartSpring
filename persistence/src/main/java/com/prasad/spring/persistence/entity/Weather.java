@@ -5,10 +5,19 @@ import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ENTITY")
+//@Table(name="WEATHER")
+
+@NamedQueries({
+	@NamedQuery(name="wthr.findAll", query="SELECT w FROM Weather w"),
+	@NamedQuery(name="wthr.findByCity", query="SELECT w FROM Weather w WHERE w.city = :wCity")
+})
+
 public class Weather {
 	
 	@Id
@@ -19,9 +28,12 @@ public class Weather {
 	private int pressure;
 	private int temperature;
 	
+	@OneToOne
+	private Wind wind;
+	
 	@Column(columnDefinition="VARCHAR(500)", unique=false)
-	//By default the string is varchar(255)
 	private String description;
+	//By default the string is varchar(255)
 	
 	public Weather(){
 		this.id=UUID.randomUUID().toString();
@@ -63,5 +75,16 @@ public class Weather {
 	public void setTemperature(int temperature) {
 		this.temperature = temperature;
 	}
-
+	public Wind getWind() {
+		return wind;
+	}
+	public void setWind(Wind wind) {
+		this.wind = wind;
+	}
+	
+	@Override
+	public String toString() {
+		return "Weather [id=" + id + ", city=" + city + ", humidity=" + humidity + ", pressure=" + pressure
+				+ ", temperature=" + temperature + ", wind=" + wind + ", description=" + description + "]";
+	}
 }
