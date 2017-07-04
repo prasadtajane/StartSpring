@@ -57,6 +57,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.prasad.spring.bootapi"/>
 			<item value="com.prasad.spring.persistence"/>
 			<item value="com.prasad.spring.rest_database"/>
 			<item value="io.egen.small_app"/>
@@ -69,6 +70,7 @@
 			<item value="com.prasad.learnspring"/>
 		</list>
 		<list key="artifactId">
+			<item value="bootapi"/>
 			<item value="persistence"/>
 			<item value="rest-database"/>
 			<item value="small-app"/>

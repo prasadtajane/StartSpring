@@ -16,6 +16,12 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.1.RELEASE</version>
+	</parent>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -31,7 +37,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring.boot.ver}</version>
+				<version>1.5.1.RELEASE</version>
 				<configuration>
 					<executable>true</executable>
 					<!-- Give full path of the main class -->
